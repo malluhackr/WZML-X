@@ -43,4 +43,4 @@ uv
 uvloop
 xattr
 yt-dlp
-pyth
+pytz
