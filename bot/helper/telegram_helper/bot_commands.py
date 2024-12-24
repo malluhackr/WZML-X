@@ -4,19 +4,19 @@ from bot import CMD_SUFFIX, config_dict
 class _BotCommands:
     def __init__(self):
         self.StartCommand = 'start'
-        self.MirrorCommand = [f'mirror0{CMD_SUFFIX}', f'm0{CMD_SUFFIX}']
-        self.QbMirrorCommand = [f'qbmirror0{CMD_SUFFIX}', f'qm0{CMD_SUFFIX}']
-        self.YtdlCommand = [f'ytdl0{CMD_SUFFIX}', f'y0{CMD_SUFFIX}']
-        self.LeechCommand = [f'leech0{CMD_SUFFIX}', f'l0{CMD_SUFFIX}']
-        self.QbLeechCommand = [f'qbleech0{CMD_SUFFIX}', f'ql0{CMD_SUFFIX}']
-        self.YtdlLeechCommand = [f'ytdlleech0{CMD_SUFFIX}', f'yl0{CMD_SUFFIX}']
+        self.MirrorCommand = [f'mirror0{CMD_SUFFIX}', f'm{CMD_SUFFIX}']
+        self.QbMirrorCommand = [f'qbmirror0{CMD_SUFFIX}', f'qm{CMD_SUFFIX}']
+        self.YtdlCommand = [f'ytdl0{CMD_SUFFIX}', f'y{CMD_SUFFIX}']
+        self.LeechCommand = [f'leech0{CMD_SUFFIX}', f'l{CMD_SUFFIX}']
+        self.QbLeechCommand = [f'qbleech0{CMD_SUFFIX}', f'ql{CMD_SUFFIX}']
+        self.YtdlLeechCommand = [f'ytdlleech0{CMD_SUFFIX}', f'yl{CMD_SUFFIX}']
         if config_dict['SHOW_EXTRA_CMDS']:
-            self.MirrorCommand.extend([f'unzipmirror{CMD_SUFFIX}', f'uzm0{CMD_SUFFIX}', f'zipmirror{CMD_SUFFIX}', f'zm{CMD_SUFFIX}'])
-            self.QbMirrorCommand.extend([f'qbunzipmirror{CMD_SUFFIX}', f'quzm0{CMD_SUFFIX}', f'qbzipmirror{CMD_SUFFIX}', f'qzm{CMD_SUFFIX}'])
+            self.MirrorCommand.extend([f'unzipmirror{CMD_SUFFIX}', f'uzm{CMD_SUFFIX}', f'zipmirror{CMD_SUFFIX}', f'zm{CMD_SUFFIX}'])
+            self.QbMirrorCommand.extend([f'qbunzipmirror{CMD_SUFFIX}', f'quzm{CMD_SUFFIX}', f'qbzipmirror{CMD_SUFFIX}', f'qzm{CMD_SUFFIX}'])
             self.YtdlCommand.extend([f'ytdlzip{CMD_SUFFIX}', f'yz{CMD_SUFFIX}'])
-            self.LeechCommand.extend([f'unzipleech{CMD_SUFFIX}', f'uzl0{CMD_SUFFIX}', f'zipleech{CMD_SUFFIX}', f'zl{CMD_SUFFIX}'])
-            self.QbLeechCommand.extend([f'qbunzipleech{CMD_SUFFIX}', f'quzl0{CMD_SUFFIX}', f'qbzipleech{CMD_SUFFIX}', f'qzl{CMD_SUFFIX}'])
-            self.YtdlLeechCommand.extend([f'ytdlzipleech{CMD_SUFFIX}', f'yzl0{CMD_SUFFIX}'])
+            self.LeechCommand.extend([f'unzipleech{CMD_SUFFIX}', f'uzl{CMD_SUFFIX}', f'zipleech{CMD_SUFFIX}', f'zl{CMD_SUFFIX}'])
+            self.QbLeechCommand.extend([f'qbunzipleech{CMD_SUFFIX}', f'quzl{CMD_SUFFIX}', f'qbzipleech{CMD_SUFFIX}', f'qzl{CMD_SUFFIX}'])
+            self.YtdlLeechCommand.extend([f'ytdlzipleech{CMD_SUFFIX}', f'yzl{CMD_SUFFIX}'])
         self.CloneCommand = [f'clone{CMD_SUFFIX}', f'c{CMD_SUFFIX}']
         self.CountCommand = f'count{CMD_SUFFIX}'
         self.DeleteCommand = f'del{CMD_SUFFIX}'
